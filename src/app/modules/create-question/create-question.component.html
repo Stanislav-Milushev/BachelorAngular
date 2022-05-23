@@ -1,0 +1,86 @@
+<!-- MultipleChoise Card -->
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-tab-group>
+        <mat-tab label="MultipleChoise">
+            <mat-card fxFlex="100" class="createQuestion">
+                <form [formGroup]="service.MCfrom" (ngSubmit)="onSubmit()" fxLayoutAlign="stretch" fxLayout="column">
+                    <div class="form-group">
+                        <mat-form-field fxFlexFill appearance="fill">
+                            <mat-label>Question</mat-label>
+                            <textarea lang="en" spellcheck cols="300" autofocus matInput
+                                formControlName="Question"></textarea>
+                            <mat-error>This field is mandatory.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field fxFlexFill appearance="fill">
+                            <mat-label>right answer</mat-label>
+                            <input matInput type="text" formControlName="Rightanswer">
+                            <mat-error>This field is mandatory.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field fxFlexFill appearance="fill">
+                            <mat-label>wrong answer</mat-label>
+                            <input matInput type="text" formControlName="Wronganswer1">
+                            <mat-error>This field is mandatory.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field fxFlexFill appearance="fill">
+                            <mat-label>wrong answer</mat-label>
+                            <input matInput type="text" formControlName="Wronganswer2">
+                            <mat-error>This field is mandatory.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field fxFlexFill appearance="fill">
+                            <mat-label>wrong answer</mat-label>
+                            <input matInput type="text" formControlName="Wronganswer3">
+                            <mat-error>This field is mandatory.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <button mat-raised-button color="primary" type="submit" [disabled]="service.MCfrom.invalid" >Save Question to
+                        Worksheet</button>
+                </form>
+            </mat-card>
+        </mat-tab>
+        <!-- FreeText Card -->
+        <mat-tab label="FreeText">
+            <mat-card fxFlex="100">
+                <form [formGroup]="service.FTfrom" (ngSubmit)="onSubmit()" fxLayoutAlign="stretch" fxLayout="column">
+
+
+                    <div class="form-group">
+                        <mat-form-field class="example-full-width" appearance="fill">
+
+                            <mat-label>Question</mat-label>
+                            <textarea lang="en" spellcheck cols="300" autofocus matInput
+                            type="text" formControlName="Question"></textarea>
+                            <mat-error>This field is mandatory.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="ra" appearance="fill">
+                            <mat-label>Model Answer</mat-label>
+                            <input matInput type="text" formControlName="Answer">
+                            <mat-error>This field is mandatory.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="wa" appearance="fill">
+                            <mat-label>TaskTip</mat-label>
+                            <input matInput type="text" formControlName="TaskTip">
+                            <mat-error>This field is mandatory.</mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <button mat-raised-button type="submit" color="primary"  [disabled]="service.FTfrom.invalid">Save Question to
+                        Worksheet</button>
+
+
+                </form>
+            </mat-card>
+        </mat-tab>
+    </mat-tab-group>
+</div>

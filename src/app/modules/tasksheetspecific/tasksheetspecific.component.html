@@ -1,0 +1,41 @@
+
+
+<div class="vertical-center">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+  <!-- Id Column -->
+  <ng-container matColumnDef="TaskId">
+    <mat-header-cell  mat-header-cell *matHeaderCellDef> TaskId </mat-header-cell>
+    <mat-cell mat-cell *matCellDef="let element"> {{element.TaskId}} </mat-cell>
+  </ng-container>
+
+  <!-- Question Column -->
+  <ng-container matColumnDef="TaskTypeId">
+    <mat-header-cell  mat-header-cell *matHeaderCellDef><h5>Aufgaben Typ</h5>  </mat-header-cell>
+    <mat-cell mat-cell *matCellDef="let element"> {{element.TaskTypeId}} </mat-cell>
+  </ng-container>
+
+  <!-- Rightanswer Column -->
+  <ng-container matColumnDef="Question">
+    <mat-header-cell  mat-header-cell *matHeaderCellDef><h5>Frage</h5>  </mat-header-cell>
+    <mat-cell mat-cell *matCellDef="let element"> {{element.Question}} </mat-cell>
+  </ng-container>
+
+  <!-- Symbol Actions -->
+  <ng-container matColumnDef="actions">
+    <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+    <mat-cell mat-cell *matCellDef="let row">
+      <button mat-button matTooltip="Bearbeiten" color="primary" (click)="editLoad(element)"><mat-icon>edit</mat-icon></button>
+      <button mat-button matTooltip="Löschen" color="warn" (click)="deleteClick(row.TaskId)"><mat-icon>delete_forever</mat-icon></button>
+    </mat-cell>
+  </ng-container>
+
+
+  <mat-header-row  *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</table>
+
+&nbsp;
+
+<button mat-raised-button color="primary" class="newQuestion" (click)="NewQuestion()"> Add new Question</button>
+&nbsp;
+</div>

@@ -1,0 +1,32 @@
+
+.mat-header-row {
+  font-weight: bold;
+  
+}
+table {
+    width: fit-content;
+    white-space:normal;
+  }
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+  .newWorksheet{
+    padding: 20 px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate( -50%);
+    transform: translate(-50%);
+  }
+  .mat-row {
+    display: inline-flex;
+    min-width: 100%;
+   
+}
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate( -50%);
+    transform: translate(-50%);
+  }

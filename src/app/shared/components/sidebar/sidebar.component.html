@@ -1,0 +1,31 @@
+<mat-nav-list > 
+    <div class="profile-card">
+        <div class="header">
+            <h2>{{LogedFirstname}} {{LogedLastName}}</h2>
+            <h6>{{LogedEmail}}</h6>
+        </div>
+        <img  src="assets/img/logo5.png">
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Arbeitsblatterstellung</h2>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon>
+            Sign out
+        </button>
+    </mat-menu>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/TaskSheetOverview">Arbeitsblätter bearbeiten</a>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Übersicht</h2>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+        <mat-icon> import_contacts</mat-icon>
+        Meine Arbeitsblätter
+    </a>
+
+</mat-nav-list>

@@ -1,0 +1,28 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div"> 
+<mat-card fxFlex="100" class="TasksheetName">
+    <form [formGroup]="service.TaskSheetControl" (ngSubmit)="onSubmit()" fxLayoutAlign="stretch" fxLayout="column">
+      <div class="form-group">
+        <mat-form-field fxFlexFill appearance="fill">
+          <mat-label>Tasksheet description</mat-label>
+          <input matInput type="text" formControlName="TaskSheetName" />
+          <mat-error *ngIf="service.TaskSheetControl.controls['TaskSheetName'].errors?.required">This field is mandatory.
+          </mat-error>
+          <mat-error *ngIf="service.TaskSheetControl.controls['TaskSheetName'].errors?.maxLength">Max 30 Symbols
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Name of the Subject</mat-label>
+            <mat-select formControlName="TasksheetSubject" required>
+              <mat-option *ngFor="let subject of subjects" [value]="subject">
+                {{subject.name}}
+              </mat-option>
+            </mat-select>
+            <mat-error>This field is required</mat-error>
+          </mat-form-field>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="service.TaskSheetControl.invalid">Create TaskSheet</button>
+    </form>
+  </mat-card>
+  </div>
