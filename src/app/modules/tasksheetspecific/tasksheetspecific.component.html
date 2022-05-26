@@ -1,5 +1,8 @@
 
-
+<button mat-raised-button color="primary" class="asd" routerLink="/TaskSheetOverview" >
+  <mat-icon class="material-symbols-outlined">arrow_back_ios</mat-icon>
+  Zurück zur Blätter Übersicht
+</button>
 <div class="vertical-center">
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
   <!-- Id Column -->
@@ -24,8 +27,10 @@
   <ng-container matColumnDef="actions">
     <mat-header-cell *matHeaderCellDef> </mat-header-cell>
     <mat-cell mat-cell *matCellDef="let row">
-      <button mat-button matTooltip="Bearbeiten" color="primary" (click)="editLoad(element)"><mat-icon>edit</mat-icon></button>
-      <button mat-button matTooltip="Löschen" color="warn" (click)="deleteClick(row.TaskId)"><mat-icon>delete_forever</mat-icon></button>
+      <button mat-button matTooltip="Bearbeiten" color="primary" (click)="editLoad(element)">
+        <mat-icon class="material-symbols-outlined">edit</mat-icon></button>
+      <button mat-button matTooltip="Löschen" color="warn" (click)="deleteClick(row.TaskId)">
+        <mat-icon class="material-symbols-outlined">delete_forever</mat-icon></button>
     </mat-cell>
   </ng-container>
 
@@ -36,6 +41,6 @@
 
 &nbsp;
 
-<button mat-raised-button color="primary" class="newQuestion" (click)="NewQuestion()"> Add new Question</button>
+<button mat-raised-button color="primary" class="newQuestion" (click)="NewQuestion()">Neue Frage hinzufügen</button>
 &nbsp;
 </div>

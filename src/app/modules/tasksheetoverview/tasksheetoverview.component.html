@@ -25,13 +25,13 @@
     <mat-cell *matCellDef="let row">
       <button mat-button matTooltip="Bearbeiten"color="primary"  (click)="NavigateToQuestions(row.TaskSheetId)" ><mat-icon>edit</mat-icon></button>
       <button mat-button matTooltip="Löschen"color="warn" (click)="ondisable(row.TaskSheetId)">	<mat-icon>delete_forever</mat-icon></button>
-      <button mat-button matTooltip="CSV export" color="accent" (click)="ondisable(row)">	<mat-icon>save_alt</mat-icon></button>
+      <button mat-button matTooltip="CSV export" color="accent" (click)="onExport(row)">	<mat-icon> save_alt</mat-icon></button>
     </mat-cell>
   </ng-container>
 
 
   <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  <mat-row matRipple *matRowDef="let row; columns: displayedColumns;"></mat-row>
 </table >
 
 <button mat-raised-button color="primary" class="newWorksheet" (click)="OpenWorkSheetForm()">	<mat-icon>add_to_photos</mat-icon> Neues Arbeitsblatt</button>

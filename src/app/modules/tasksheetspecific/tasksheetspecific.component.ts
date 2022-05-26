@@ -3,7 +3,6 @@ import { SharedService } from 'src/app/shared.service';
 import { MatDialog, MatDialogConfig, MatSnackBar } from '@angular/material';
 import { CreateQuestionComponent } from '../create-question/create-question.component';
 import { Router } from '@angular/router';
-import { identifierModuleUrl } from '@angular/compiler';
 import { __await } from 'tslib';
 import { HttpHeaders } from '@angular/common/http';
 @Component({

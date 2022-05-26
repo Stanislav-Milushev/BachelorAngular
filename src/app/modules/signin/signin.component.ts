@@ -30,9 +30,13 @@ export class SigninComponent implements OnInit {
     this.serviceS.getUser().subscribe(data => {
       this.result=data;
       console.log(this.result);
-      
     });
     }
+
+    delay(time) {
+      return new Promise(resolve => setTimeout(resolve, time));
+    }
+
     closeDialog(){
       this.dialogRef.close();
     }
@@ -42,11 +46,9 @@ export class SigninComponent implements OnInit {
       });
     }
 
-  onSubmit() {
+  async onSubmit() {
     switch (true) {
       case this.service.loginForm.valid:
-        //this.service.insertEmployee(this.service.loginForm.value);
-
 
         var email = String(this.service.loginForm.controls['email'].value);
         var password = String(this.service.loginForm.controls['password'].value);
@@ -69,7 +71,6 @@ export class SigninComponent implements OnInit {
            if(logincheck == 0){
             this.openSnackBar("Ungültige Anmeldeinformationen");
               this.service.loginForm.reset();
-              this.service.initializeFormGroup();
               
             }else if(logincheck == 1){
               this.service.setLogedEmail(LoginUser.Email);
@@ -80,10 +81,7 @@ export class SigninComponent implements OnInit {
               this.closeDialog();
               this.openSnackBar("Login Erfolgreich!");
             }
-            
-           
 
-     
         break;
       case this.service.registerForm.valid:
         var register = new teacher();
@@ -98,9 +96,7 @@ export class SigninComponent implements OnInit {
         try {
         this.result.forEach(function(item) {
           if(item.Email==register.Email){
-            this.openSnackBar("Diese Email ist bereits registriert!");
             breakcheck = true;
-            throw BreakException;
             
           }
        
@@ -111,18 +107,15 @@ export class SigninComponent implements OnInit {
        if (breakcheck==false){
          this.serviceS.addUser(register).subscribe(result => {
           this.openSnackBar(result.toString());});
-        this.service.registerForm.reset();
-        this.service.initializeFormGroup();
-       }
-       
-
-      
+       }else {
+         this.openSnackBar("Diese Email ist bereits registriert!");}
+       await this.delay(250);
        this.ngOnInit();
-        //reset formgroup
         
     }
 
   }
 
 }
+
 

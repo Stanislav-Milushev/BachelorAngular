@@ -21,7 +21,8 @@ export class HeaderComponent implements OnInit {
     }, 300);
   }
 
-  constructor(private service: SigninService, private dialog: MatDialog) { 
+  constructor(private service: SigninService, 
+              private dialog: MatDialog) { 
   
   }
 

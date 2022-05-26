@@ -1,29 +1,15 @@
 import { Injectable } from '@angular/core';
-import {
-  HttpClient, HttpEvent,
-  HttpInterceptor,
-  HttpHandler,
-  HttpRequest,
-  HttpErrorResponse,
-  HttpHeaders
-} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { validateBasis } from '@angular/flex-layout';
-import { FormBuilder } from '@angular/forms';
-import { taskSheet } from './modules/taskSheet.model';
-import { teacher } from './modules/teacher.model';
 @Injectable({
   providedIn: 'root'
 })
 export class SharedService {
 
   readonly APIUrl = "http://localhost:32508/api";
-  teacher: { TeacherId: number; FirstName: string; LastName: string; Email: string; Password: string; };
 
   constructor(private http: HttpClient) { }
   //MultipleChoise methods ========================================
-  taskSheetFrom: taskSheet;
-  teacherFrom: teacher;
   getMultList(): Observable<any[]> {
     return this.http.get<any>(this.APIUrl + '/mctask');
   }
@@ -102,6 +88,9 @@ export class SharedService {
   addUser(val: any) {
     return this.http.post(this.APIUrl + '/teacher', val);
   }
-
+  //CSV methods ========================================
+  getCsvData(tasksheet: any,tasktype: any): Observable<any[]> {
+    return this.http.get<any>(this.APIUrl + '/csv/'+tasksheet+"/"+tasktype);
+  }
 
 }
