@@ -27,10 +27,10 @@
   <ng-container matColumnDef="actions">
     <mat-header-cell *matHeaderCellDef> </mat-header-cell>
     <mat-cell mat-cell *matCellDef="let row">
-      <button mat-button matTooltip="Bearbeiten" color="primary" (click)="editLoad(element)">
-        <mat-icon class="material-symbols-outlined">edit</mat-icon></button>
+      <button mat-button matTooltip="Bearbeiten" color="primary" (click)="editLoad(row.TaskId,row.TaskTypeId)">
+        <mat-icon >edit</mat-icon></button>
       <button mat-button matTooltip="Löschen" color="warn" (click)="deleteClick(row.TaskId)">
-        <mat-icon class="material-symbols-outlined">delete_forever</mat-icon></button>
+        <mat-icon >delete_forever</mat-icon></button>
     </mat-cell>
   </ng-container>
 

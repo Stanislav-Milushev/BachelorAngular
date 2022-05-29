@@ -79,6 +79,9 @@ export class SharedService {
   addTaskCollection(val: any) {
     return this.http.post(this.APIUrl + '/taskcollection', val);
   }
+  updateTaskCollection(val: any) {
+    return this.http.put(this.APIUrl + '/taskcollection', val);
+  }
 
   //User methods ========================================
 
@@ -89,8 +92,11 @@ export class SharedService {
     return this.http.post(this.APIUrl + '/teacher', val);
   }
   //CSV methods ========================================
-  getCsvData(tasksheet: any,tasktype: any): Observable<any[]> {
+  getCsvData(tasksheet: any,tasktype: any): Observable<any[]> { // tasktype 1 =Multiplechoice, 2=Freetext
     return this.http.get<any>(this.APIUrl + '/csv/'+tasksheet+"/"+tasktype);
+  }
+  getUpdateQuestionData(TaskSheetid: any,TaskTypeId: any,TaskId): Observable<any[]> { // tasktype 1 =Multiplechoice, 2=Freetext
+    return this.http.get<any>(this.APIUrl + '/csv/'+TaskSheetid+"/"+TaskTypeId+"/"+TaskId);
   }
 
 }

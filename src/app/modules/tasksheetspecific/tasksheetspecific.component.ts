@@ -5,6 +5,7 @@ import { CreateQuestionComponent } from '../create-question/create-question.comp
 import { Router } from '@angular/router';
 import { __await } from 'tslib';
 import { HttpHeaders } from '@angular/common/http';
+import { UpdateQuestionComponent } from '../update-question/update-question.component';
 @Component({
   selector: 'app-tasksheetspecific',
   templateUrl: './tasksheetspecific.component.html',
@@ -62,14 +63,20 @@ export class TasksheetspecificComponent implements OnInit {
     });
   }
 
-  editLoad(element) { // genau diese Frage laden 
+  editLoad(TaskId,TaskTypeId) { // genau diese Frage laden 
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus = true;
     dialogConfig.width = "400px";
-    this.dialog.open(CreateQuestionComponent, dialogConfig).afterClosed()
+    var datad = {
+      TaskSheetId: this.TaskSheetId,
+      TasktypeId: (TaskTypeId =="Freitext") ? 2: (TaskTypeId =="MultipleChoice") ? 1: 3,
+      TaskId: TaskId
+    };
+    dialogConfig.data = datad;
+    this.dialog.open(UpdateQuestionComponent, dialogConfig).afterClosed()
       .subscribe(() => this.refreshTaskSheetoverview());;
-
   }
+
   NewQuestion() {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus = true;
@@ -81,6 +88,7 @@ export class TasksheetspecificComponent implements OnInit {
     this.dialog.open(CreateQuestionComponent, dialogConfig).afterClosed()
       .subscribe(() => this.refreshTaskSheetoverview());;
   }
+
   deleteClick(TaskId){
     // delete task in sheet table aslo nur ref zu dem blatt
     console.log(TaskId);

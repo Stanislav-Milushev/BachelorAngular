@@ -27,6 +27,7 @@ import { CreateQuestionComponent } from './modules/create-question/create-questi
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { UpdateQuestionComponent } from './modules/update-question/update-question.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     SigninComponent,
     CreateTaskSheetComponent,
     CreateQuestionComponent,
+    UpdateQuestionComponent
   ],
   imports: [
     CommonModule,
@@ -64,7 +66,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
   ],
   providers: [SharedService, SigninService],
   bootstrap: [AppComponent],
-  entryComponents: [SigninComponent,CreateQuestionComponent,CreateTaskSheetComponent],
+  entryComponents: [SigninComponent,CreateQuestionComponent,CreateTaskSheetComponent,UpdateQuestionComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

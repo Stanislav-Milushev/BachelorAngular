@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
-import { DatePipe } from '@angular/common';
 import { MustMatch } from './MustMatch';
-import { SharedService } from '../shared.service';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
@@ -45,12 +43,13 @@ export class SigninService {
     this._LogedId.next(value);
   }
 
-  constructor(private service: SharedService) {
+  constructor() {
     this._LogedEmail= new BehaviorSubject<string>("");
     this._LogedFirstname= new BehaviorSubject<string>("");
     this._LogedLastName= new BehaviorSubject<string>("");
     this._LogedId= new BehaviorSubject<number>(0);
    }
+   // user account management forms
   registerForm: FormGroup = new FormGroup({
     firstName: new FormControl('', Validators.required),
     lastName: new FormControl('', Validators.required),
@@ -61,15 +60,16 @@ export class SigninService {
     {
       validators: MustMatch('password', 'confirmPassword')
     });
-
   loginForm: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(30)]),
   });
+  // create tasksheet form
   TaskSheetControl: FormGroup = new FormGroup({
     TaskSheetName: new FormControl('', [Validators.required,Validators.maxLength(50)]),
     TasksheetSubject: new FormControl('', Validators.required)
   });
+  // create question forms
   MCfrom: FormGroup = new FormGroup({
     Question: new FormControl('', Validators.required),
     Rightanswer: new FormControl('', Validators.required),
@@ -81,7 +81,8 @@ export class SigninService {
     Question: new FormControl('', Validators.required),
     Answer: new FormControl('', Validators.required),
     TaskTip: new FormControl('', Validators.required),
-  });
+  })
+  // update question forms
 
 
   //this.service.loginForm.reset() alles auf null setzten in der form 

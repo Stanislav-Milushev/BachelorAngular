@@ -77,14 +77,14 @@ export class TasksheetoverviewComponent implements OnInit {
   async onExport(row) {
     var options = {
       fieldSeparator: ' ; ',
-      quoteStrings: '*',
+      quoteStrings: "'",
       decimalseparator: '.',
       showLabels: true,
       showTitle: true,
       title: row.TaskSheetName,
       useBom: true,
       noDownload: false,
-      headers: ["TaskType","Question"],
+      headers: [],
       useHeader: false,
       nullToEmptyString: true,
     };
@@ -93,14 +93,15 @@ export class TasksheetoverviewComponent implements OnInit {
     console.log(csvdata)
     let newcsv =new AngularCsv(csvdata, "" + row.TaskSheetName + "", options);
     console.log(newcsv.getCsvData())
+    
   }
+
   async getCsvData(row) {
     var data = [];
-    let mult= await new Promise((resolve,reject) =>{
+    let mult= await new Promise((resolve,reject) =>{ // Multiplechoice
       this.serviceS.getCsvData(row.TaskSheetId, 1).subscribe(result => {
         
         result.forEach(function (item) {
-          item.TaskTypeId = "Multiplechoice";
           data.push(item);
         })
         if(1>0){
@@ -112,11 +113,10 @@ export class TasksheetoverviewComponent implements OnInit {
     })  as Array<any>;
 
     console.log(mult)
-    let ft= await new Promise((resolve,reject) =>{
+    let ft= await new Promise((resolve,reject) =>{ // Freitext
         this.serviceS.getCsvData(row.TaskSheetId, 2).subscribe(result => {
         var data = [];
         result.forEach(function (item) {
-          item.TaskTypeId = "Freitext";
           data.push(item);
         })
         if(1>0){
@@ -129,9 +129,17 @@ export class TasksheetoverviewComponent implements OnInit {
     }) as Array<any>;
 
     let csvdata= [];
+    let ftheaders = ["$","Freitext"];
+    let ftheaders2 = ['Question','Answer','TaskTip'];
+    csvdata.push(ftheaders);
+    csvdata.push(ftheaders2);
     ft.forEach(function (item){
       csvdata.push(item)
     })
+    let multheaders = ["$","Multiplechoice"];
+    let multheaders2 = ['Question','Rightanswer','Wronganswer1','Wronganswer2','Wronganswer3']
+    csvdata.push(multheaders);
+    csvdata.push(multheaders2);
     mult.forEach(function (item){
       csvdata.push(item)
     })
