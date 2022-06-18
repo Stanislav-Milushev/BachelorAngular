@@ -12,9 +12,6 @@ const routes: Routes = [{
     path: '',
     component: DashboardComponent
   }, {
-    path: 'TaskCreation',
-    component: TasksheetoverviewComponent
-  }, {
     path: 'TaskSheetOverview',
     component: TasksheetoverviewComponent
   }, {

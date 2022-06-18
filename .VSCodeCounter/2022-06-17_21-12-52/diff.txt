@@ -1,0 +1,171 @@
+Date : 2022-06-17 21:12:52
+Directory : c:\Users\menka\BachelorAngular\.VSCodeCounter\2022-05-16_02-16-36
+Total : 110 files,  -2517 codes, -143 comments, -469 blanks, all -3129 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| Markdown           |          5 |        182 |          0 |         25 |        207 |
+| JSON with Comments |          2 |        -37 |          0 |         -2 |        -39 |
+| JavaScript         |          2 |        -53 |         -8 |         -4 |        -65 |
+| SCSS               |         19 |       -176 |         -1 |        -39 |       -216 |
+| JSON               |          5 |       -233 |        -20 |         -2 |       -255 |
+| HTML               |         19 |       -568 |        -22 |        -92 |       -682 |
+| TypeScript         |         58 |     -1,632 |        -92 |       -355 |     -2,079 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                        | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                           |        110 |     -2,517 |       -143 |       -469 |     -3,129 |
+| ..                                                                                          |        105 |     -2,700 |       -143 |       -495 |     -3,338 |
+| ..\..                                                                                       |        105 |     -2,700 |       -143 |       -495 |     -3,338 |
+| ..\..\..                                                                                    |        105 |     -2,700 |       -143 |       -495 |     -3,338 |
+| ..\..\..\BaRepo                                                                             |        105 |     -2,700 |       -143 |       -495 |     -3,338 |
+| ..\..\..\BaRepo\e2e                                                                         |          4 |        -64 |         -7 |        -11 |        -82 |
+| ..\..\..\BaRepo\e2e\src                                                                     |          2 |        -27 |         -1 |         -8 |        -36 |
+| ..\..\..\BaRepo\src                                                                         |         94 |     -2,349 |       -114 |       -478 |     -2,941 |
+| ..\..\..\BaRepo\src\app                                                                     |         87 |     -2,289 |        -43 |       -453 |     -2,785 |
+| ..\..\..\BaRepo\src\app\layouts                                                             |          5 |        -90 |          0 |        -21 |       -111 |
+| ..\..\..\BaRepo\src\app\layouts\default                                                     |          5 |        -90 |          0 |        -21 |       -111 |
+| ..\..\..\BaRepo\src\app\modules                                                             |         45 |     -1,333 |        -36 |       -258 |     -1,627 |
+| ..\..\..\BaRepo\src\app\modules\create-question                                             |          4 |       -179 |         -2 |        -23 |       -204 |
+| ..\..\..\BaRepo\src\app\modules\create-task-sheet                                           |          4 |       -104 |          0 |        -13 |       -117 |
+| ..\..\..\BaRepo\src\app\modules\dashboard                                                   |          4 |       -121 |         -4 |        -35 |       -160 |
+| ..\..\..\BaRepo\src\app\modules\posts                                                       |          4 |        -32 |          0 |        -13 |        -45 |
+| ..\..\..\BaRepo\src\app\modules\register                                                    |          4 |        -90 |          0 |        -18 |       -108 |
+| ..\..\..\BaRepo\src\app\modules\signin                                                      |          4 |       -208 |         -6 |        -42 |       -256 |
+| ..\..\..\BaRepo\src\app\modules\taskcreation                                                |          4 |       -141 |         -7 |        -32 |       -180 |
+| ..\..\..\BaRepo\src\app\modules\tasksheetoverview                                           |          4 |       -144 |        -12 |        -32 |       -188 |
+| ..\..\..\BaRepo\src\app\modules\tasksheetspecific                                           |          4 |       -136 |         -4 |        -27 |       -167 |
+| ..\..\..\BaRepo\src\app\new-work-sheet-form                                                 |          4 |        -93 |          0 |        -29 |       -122 |
+| ..\..\..\BaRepo\src\app\shared                                                              |         25 |       -530 |         -1 |       -117 |       -648 |
+| ..\..\..\BaRepo\src\app\shared\components                                                   |         12 |       -206 |         -1 |        -59 |       -266 |
+| ..\..\..\BaRepo\src\app\shared\components\footer                                            |          4 |        -37 |          0 |        -13 |        -50 |
+| ..\..\..\BaRepo\src\app\shared\components\header                                            |          4 |        -96 |         -1 |        -27 |       -124 |
+| ..\..\..\BaRepo\src\app\shared\components\sidebar                                           |          4 |        -73 |          0 |        -19 |        -92 |
+| ..\..\..\BaRepo\src\app\shared\widgets                                                      |         12 |       -276 |          0 |        -56 |       -332 |
+| ..\..\..\BaRepo\src\app\shared\widgets\area                                                 |          4 |        -66 |          0 |        -17 |        -83 |
+| ..\..\..\BaRepo\src\app\shared\widgets\card                                                 |          4 |       -131 |          0 |        -23 |       -154 |
+| ..\..\..\BaRepo\src\app\shared\widgets\pie                                                  |          4 |        -79 |          0 |        -16 |        -95 |
+| ..\..\..\BaRepo\src\environments                                                            |          2 |         -6 |        -11 |         -4 |        -21 |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                    | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Users\menka\BaRepo\README.md                                                             | Markdown           |          0 |          0 |         -1 |         -1 |
+| c:\Users\menka\BaRepo\angular.json                                                          | JSON               |       -110 |        -20 |          0 |       -130 |
+| c:\Users\menka\BaRepo\e2e\protractor.conf.js                                                | JavaScript         |        -24 |         -6 |         -2 |        -32 |
+| c:\Users\menka\BaRepo\e2e\src\app.e2e-spec.ts                                               | TypeScript         |        -18 |         -1 |         -5 |        -24 |
+| c:\Users\menka\BaRepo\e2e\src\app.po.ts                                                     | TypeScript         |         -9 |          0 |         -3 |        -12 |
+| c:\Users\menka\BaRepo\e2e\tsconfig.json                                                     | JSON with Comments |        -13 |          0 |         -1 |        -14 |
+| c:\Users\menka\BaRepo\karma.conf.js                                                         | JavaScript         |        -29 |         -2 |         -2 |        -33 |
+| c:\Users\menka\BaRepo\src\app\app-routing.module.ts                                         | TypeScript         |        -47 |          0 |         -3 |        -50 |
+| c:\Users\menka\BaRepo\src\app\app.component.html                                            | HTML               |         -1 |          0 |          0 |         -1 |
+| c:\Users\menka\BaRepo\src\app\app.component.scss                                            | SCSS               |          0 |          0 |         -1 |         -1 |
+| c:\Users\menka\BaRepo\src\app\app.component.spec.ts                                         | TypeScript         |        -31 |          0 |         -5 |        -36 |
+| c:\Users\menka\BaRepo\src\app\app.component.ts                                              | TypeScript         |         -8 |          0 |         -4 |        -12 |
+| c:\Users\menka\BaRepo\src\app\app.module.ts                                                 | TypeScript         |        -72 |          0 |         -4 |        -76 |
+| c:\Users\menka\BaRepo\src\app\layouts\default\default.component.html                        | HTML               |        -10 |          0 |         -2 |        -12 |
+| c:\Users\menka\BaRepo\src\app\layouts\default\default.component.scss                        | SCSS               |        -14 |          0 |         -3 |        -17 |
+| c:\Users\menka\BaRepo\src\app\layouts\default\default.component.spec.ts                     | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\layouts\default\default.component.ts                          | TypeScript         |        -14 |          0 |         -8 |        -22 |
+| c:\Users\menka\BaRepo\src\app\layouts\default\default.module.ts                             | TypeScript         |        -32 |          0 |         -2 |        -34 |
+| c:\Users\menka\BaRepo\src\app\modules\FTTaskForm.model.ts                                   | TypeScript         |         -6 |          0 |          0 |         -6 |
+| c:\Users\menka\BaRepo\src\app\modules\MCTaskFrom.model.ts                                   | TypeScript         |         -8 |          0 |          0 |         -8 |
+| c:\Users\menka\BaRepo\src\app\modules\MustMatch.ts                                          | TypeScript         |        -28 |          0 |         -4 |        -32 |
+| c:\Users\menka\BaRepo\src\app\modules\TaskCollectionForm.model.ts                           | TypeScript         |         -7 |          0 |          0 |         -7 |
+| c:\Users\menka\BaRepo\src\app\modules\create-question\create-question.component.html        | HTML               |        -78 |         -2 |         -6 |        -86 |
+| c:\Users\menka\BaRepo\src\app\modules\create-question\create-question.component.scss        | SCSS               |         -9 |          0 |         -2 |        -11 |
+| c:\Users\menka\BaRepo\src\app\modules\create-question\create-question.component.spec.ts     | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\modules\create-question\create-question.component.ts          | TypeScript         |        -72 |          0 |         -9 |        -81 |
+| c:\Users\menka\BaRepo\src\app\modules\create-task-sheet\create-task-sheet.component.html    | HTML               |        -25 |          0 |          0 |        -25 |
+| c:\Users\menka\BaRepo\src\app\modules\create-task-sheet\create-task-sheet.component.scss    | SCSS               |        -10 |          0 |         -2 |        -12 |
+| c:\Users\menka\BaRepo\src\app\modules\create-task-sheet\create-task-sheet.component.spec.ts | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\modules\create-task-sheet\create-task-sheet.component.ts      | TypeScript         |        -49 |          0 |         -5 |        -54 |
+| c:\Users\menka\BaRepo\src\app\modules\dashboard.service.spec.ts                             | TypeScript         |         -9 |          0 |         -4 |        -13 |
+| c:\Users\menka\BaRepo\src\app\modules\dashboard.service.ts                                  | TypeScript         |        -52 |          0 |         -6 |        -58 |
+| c:\Users\menka\BaRepo\src\app\modules\dashboard\dashboard.component.html                    | HTML               |        -42 |         -4 |        -17 |        -63 |
+| c:\Users\menka\BaRepo\src\app\modules\dashboard\dashboard.component.scss                    | SCSS               |         -8 |          0 |         -2 |        -10 |
+| c:\Users\menka\BaRepo\src\app\modules\dashboard\dashboard.component.spec.ts                 | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\modules\dashboard\dashboard.component.ts                      | TypeScript         |        -51 |          0 |        -10 |        -61 |
+| c:\Users\menka\BaRepo\src\app\modules\posts\posts.component.html                            | HTML               |         -1 |          0 |         -1 |         -2 |
+| c:\Users\menka\BaRepo\src\app\modules\posts\posts.component.scss                            | SCSS               |          0 |          0 |         -1 |         -1 |
+| c:\Users\menka\BaRepo\src\app\modules\posts\posts.component.spec.ts                         | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\modules\posts\posts.component.ts                              | TypeScript         |        -11 |          0 |         -5 |        -16 |
+| c:\Users\menka\BaRepo\src\app\modules\register\register.component.html                      | HTML               |        -51 |          0 |          0 |        -51 |
+| c:\Users\menka\BaRepo\src\app\modules\register\register.component.scss                      | SCSS               |          0 |          0 |         -1 |         -1 |
+| c:\Users\menka\BaRepo\src\app\modules\register\register.component.spec.ts                   | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\modules\register\register.component.ts                        | TypeScript         |        -19 |          0 |        -11 |        -30 |
+| c:\Users\menka\BaRepo\src\app\modules\signin.service.ts                                     | TypeScript         |        -54 |         -1 |         -9 |        -64 |
+| c:\Users\menka\BaRepo\src\app\modules\signin\signin.component.html                          | HTML               |        -97 |         -2 |         -6 |       -105 |
+| c:\Users\menka\BaRepo\src\app\modules\signin\signin.component.scss                          | SCSS               |        -16 |          0 |         -3 |        -19 |
+| c:\Users\menka\BaRepo\src\app\modules\signin\signin.component.spec.ts                       | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\modules\signin\signin.component.ts                            | TypeScript         |        -75 |         -4 |        -27 |       -106 |
+| c:\Users\menka\BaRepo\src\app\modules\taskSheet.model.ts                                    | TypeScript         |         -6 |          0 |          0 |         -6 |
+| c:\Users\menka\BaRepo\src\app\modules\taskcreation\taskcreation.component.html              | HTML               |        -34 |         -6 |         -7 |        -47 |
+| c:\Users\menka\BaRepo\src\app\modules\taskcreation\taskcreation.component.scss              | SCSS               |        -16 |          0 |         -5 |        -21 |
+| c:\Users\menka\BaRepo\src\app\modules\taskcreation\taskcreation.component.spec.ts           | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\modules\taskcreation\taskcreation.component.ts                | TypeScript         |        -71 |         -1 |        -14 |        -86 |
+| c:\Users\menka\BaRepo\src\app\modules\tasksheetoverview\tasksheetoverview.component.html    | HTML               |        -27 |         -4 |         -8 |        -39 |
+| c:\Users\menka\BaRepo\src\app\modules\tasksheetoverview\tasksheetoverview.component.scss    | SCSS               |        -29 |          0 |         -3 |        -32 |
+| c:\Users\menka\BaRepo\src\app\modules\tasksheetoverview\tasksheetoverview.component.spec.ts | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\modules\tasksheetoverview\tasksheetoverview.component.ts      | TypeScript         |        -68 |         -8 |        -15 |        -91 |
+| c:\Users\menka\BaRepo\src\app\modules\tasksheetspecific\tasksheetspecific.component.html    | HTML               |        -28 |         -4 |         -9 |        -41 |
+| c:\Users\menka\BaRepo\src\app\modules\tasksheetspecific\tasksheetspecific.component.scss    | SCSS               |        -28 |          0 |         -4 |        -32 |
+| c:\Users\menka\BaRepo\src\app\modules\tasksheetspecific\tasksheetspecific.component.spec.ts | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\modules\tasksheetspecific\tasksheetspecific.component.ts      | TypeScript         |        -60 |          0 |         -8 |        -68 |
+| c:\Users\menka\BaRepo\src\app\modules\teacher.model.ts                                      | TypeScript         |         -8 |          0 |          0 |         -8 |
+| c:\Users\menka\BaRepo\src\app\new-work-sheet-form\new-work-sheet-form.component.html        | HTML               |        -62 |          0 |        -17 |        -79 |
+| c:\Users\menka\BaRepo\src\app\new-work-sheet-form\new-work-sheet-form.component.scss        | SCSS               |          0 |          0 |         -1 |         -1 |
+| c:\Users\menka\BaRepo\src\app\new-work-sheet-form\new-work-sheet-form.component.spec.ts     | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\new-work-sheet-form\new-work-sheet-form.component.ts          | TypeScript         |        -11 |          0 |         -5 |        -16 |
+| c:\Users\menka\BaRepo\src\app\shared.service.spec.ts                                        | TypeScript         |         -9 |          0 |         -4 |        -13 |
+| c:\Users\menka\BaRepo\src\app\shared.service.ts                                             | TypeScript         |        -75 |         -6 |         -7 |        -88 |
+| c:\Users\menka\BaRepo\src\app\shared\components\footer\footer.component.html                | HTML               |         -3 |          0 |         -1 |         -4 |
+| c:\Users\menka\BaRepo\src\app\shared\components\footer\footer.component.scss                | SCSS               |         -3 |          0 |         -1 |         -4 |
+| c:\Users\menka\BaRepo\src\app\shared\components\footer\footer.component.spec.ts             | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\shared\components\footer\footer.component.ts                  | TypeScript         |        -11 |          0 |         -5 |        -16 |
+| c:\Users\menka\BaRepo\src\app\shared\components\header\header.component.html                | HTML               |        -37 |          0 |         -5 |        -42 |
+| c:\Users\menka\BaRepo\src\app\shared\components\header\header.component.scss                | SCSS               |         -6 |          0 |          0 |         -6 |
+| c:\Users\menka\BaRepo\src\app\shared\components\header\header.component.spec.ts             | TypeScript         |        -21 |          0 |         -4 |        -25 |
+| c:\Users\menka\BaRepo\src\app\shared\components\header\header.component.ts                  | TypeScript         |        -32 |         -1 |        -18 |        -51 |
+| c:\Users\menka\BaRepo\src\app\shared\components\sidebar\sidebar.component.html              | HTML               |        -26 |          0 |         -7 |        -33 |
+| c:\Users\menka\BaRepo\src\app\shared\components\sidebar\sidebar.component.scss              | SCSS               |        -16 |          0 |         -1 |        -17 |
+| c:\Users\menka\BaRepo\src\app\shared\components\sidebar\sidebar.component.spec.ts           | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\shared\components\sidebar\sidebar.component.ts                | TypeScript         |        -11 |          0 |         -5 |        -16 |
+| c:\Users\menka\BaRepo\src\app\shared\shared.module.ts                                       | TypeScript         |        -48 |          0 |         -2 |        -50 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\area\area.component.html                       | HTML               |         -2 |          0 |          0 |         -2 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\area\area.component.scss                       | SCSS               |          0 |          0 |         -1 |         -1 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\area\area.component.spec.ts                    | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\area\area.component.ts                         | TypeScript         |        -44 |          0 |        -10 |        -54 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\card\card.component.html                       | HTML               |        -16 |          0 |         -4 |        -20 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\card\card.component.scss                       | SCSS               |        -17 |          0 |         -4 |        -21 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\card\card.component.spec.ts                    | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\card\card.component.ts                         | TypeScript         |        -78 |          0 |         -9 |        -87 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\pie\pie.component.html                         | HTML               |         -2 |          0 |          0 |         -2 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\pie\pie.component.scss                         | SCSS               |          0 |          0 |         -1 |         -1 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\pie\pie.component.spec.ts                      | TypeScript         |        -20 |          0 |         -6 |        -26 |
+| c:\Users\menka\BaRepo\src\app\shared\widgets\pie\pie.component.ts                           | TypeScript         |        -57 |          0 |         -9 |        -66 |
+| c:\Users\menka\BaRepo\src\environments\environment.prod.ts                                  | TypeScript         |         -3 |          0 |         -1 |         -4 |
+| c:\Users\menka\BaRepo\src\environments\environment.ts                                       | TypeScript         |         -3 |        -11 |         -3 |        -17 |
+| c:\Users\menka\BaRepo\src\index.html                                                        | HTML               |        -26 |          0 |         -2 |        -28 |
+| c:\Users\menka\BaRepo\src\main.ts                                                           | TypeScript         |        -10 |          0 |         -4 |        -14 |
+| c:\Users\menka\BaRepo\src\polyfills.ts                                                      | TypeScript         |         -1 |        -55 |         -8 |        -64 |
+| c:\Users\menka\BaRepo\src\styles.scss                                                       | SCSS               |         -4 |         -1 |         -3 |         -8 |
+| c:\Users\menka\BaRepo\src\test.ts                                                           | TypeScript         |        -13 |         -4 |         -4 |        -21 |
+| c:\Users\menka\BaRepo\tsconfig.app.json                                                     | JSON               |        -14 |          0 |         -1 |        -15 |
+| c:\Users\menka\BaRepo\tsconfig.json                                                         | JSON with Comments |        -24 |          0 |         -1 |        -25 |
+| c:\Users\menka\BaRepo\tsconfig.spec.json                                                    | JSON               |        -18 |          0 |         -1 |        -19 |
+| c:\Users\menka\BaRepo\tslint.json                                                           | JSON               |        -92 |          0 |          0 |        -92 |
+| c:\Users\menka\BachelorAngular\.VSCodeCounter\2022-05-16_02-16-36\details.md                | Markdown           |        114 |          0 |          6 |        120 |
+| c:\Users\menka\BachelorAngular\.VSCodeCounter\2022-05-16_02-16-36\diff-details.md           | Markdown           |          9 |          0 |          6 |         15 |
+| c:\Users\menka\BachelorAngular\.VSCodeCounter\2022-05-16_02-16-36\diff.md                   | Markdown           |         12 |          0 |          7 |         19 |
+| c:\Users\menka\BachelorAngular\.VSCodeCounter\2022-05-16_02-16-36\results.json              | JSON               |          1 |          0 |          0 |          1 |
+| c:\Users\menka\BachelorAngular\.VSCodeCounter\2022-05-16_02-16-36\results.md                | Markdown           |         47 |          0 |          7 |         54 |
+| Total                                                                                       |                    |     -2,517 |       -143 |       -469 |     -3,129 |
++---------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
